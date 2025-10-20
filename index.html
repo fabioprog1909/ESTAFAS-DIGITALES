@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciberseguridad y Fraudes Digitales</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1 class="fredericka-the-great-regular">Ciberseguridad y Fraudes Digitales</h1>
+    <p class="subtitle">Aprende a protegerte de los ataques digitales más comunes</p>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="#intro" class="active">Inicio</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#phishing">Phishing</a>
+    <a href="#smishing">Smishing</a>
+    <a href="#vishing">Vishing</a>
+    <a href="#test">Test</a>
+  </nav>
+
+  <main>
+    <section id="intro" class="intro reveal">
+      <p>
+        En el mundo digital actual, las amenazas cibernéticas están en constante evolución. Los ciberdelincuentes utilizan múltiples métodos para engañar a las personas y robar información confidencial. Conocer cómo funcionan estos ataques es la mejor defensa.
+      </p>
+    </section>
+
+    <section id="objetivos" class="objetivos reveal">
+      <h2>Objetivos del módulo</h2>
+      <ul>
+        <li>Comprender los distintos tipos de fraudes digitales.</li>
+        <li>Aprender a identificar señales de alerta en mensajes sospechosos.</li>
+        <li>Desarrollar hábitos de seguridad digital en la vida diaria.</li>
+      </ul>
+    </section>
+
+    <section class="dato reveal">
+      <p>
+        <strong>Dato curioso:</strong> el 90% de los ataques cibernéticos comienzan con un correo electrónico de phishing.
+      </p>
+    </section>
+
+    <section id="phishing" class="info-section reveal">
+      <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/26d3a7ac3e6e398e2cb13d3a178d0324e5c9ce62/phishing.png" alt="Phishing">
+      <div class="info-text">
+        <h2>¿Qué es el phishing?</h2>
+        <p>El <strong>phishing</strong> consiste en <b>engañar al usuario para que revele información confidencial</b>, como contraseñas, datos bancarios o credenciales de acceso, haciéndose pasar por una fuente legítima. Los atacantes suelen suplantar a bancos, servicios de streaming, tiendas virtuales o instituciones reconocidas para ganar credibilidad.</p>
+        <p>El nombre “phishing” proviene del inglés <i>fishing</i> (pescar), ya que los delincuentes “lanzan el anzuelo” con mensajes falsos y esperan que alguien muerda. Este método ha evolucionado con los años, pasando del correo electrónico tradicional a redes sociales, mensajes instantáneos y hasta anuncios engañosos en buscadores.</p>
+
+        <h3>Ejemplos:</h3>
+        <ul>
+          <li>Un correo que simula ser del banco solicitando “verificar tus datos”.</li>
+          <li>Mensajes de redes sociales con enlaces para “recuperar tu cuenta”.</li>
+          <li>Archivos adjuntos que al abrirlos instalan malware.</li>
+        </ul>
+        <h3>Señales de alerta:</h3>
+        <ul>
+          <li>Direcciones de correo o web sospechosas (ej. banco-seguro.com).</li>
+          <li>Errores de ortografía o redacción extraña.</li>
+          <li>Mensajes que generan urgencia (“Actúa ahora o perderás tu cuenta”).</li>
+        </ul>
+        <button class="btn" onclick="openQuiz('phishingQuiz')">Haz el test de phishing</button>
+      </div>
+    </section>
+
+    <section id="smishing" class="info-section reveal">
+      <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/56b0d5f7784d812feea2beb24b1f7a008af1fa02/smishing.png" alt="Smishing">
+      <div class="info-text">
+        <h2>¿Qué es el smishing?</h2>
+        <p>El smishing es una modalidad moderna de fraude digital que combina el uso de mensajes de texto (SMS) y técnicas de engaño propias del phishing. Su nombre proviene de la unión de <b>SMS</b> y <b>phishing</b>. A través de este método, los ciberdelincuentes envían mensajes que aparentan provenir de entidades legítimas, como bancos, servicios de entrega o incluso instituciones públicas, con el objetivo de que la víctima haga clic en un enlace o comparta información personal.</p>
+        <p>El smishing es tan peligroso porque explota la <b>confianza que las personas tienen en la comunicación móvil</b>. A diferencia del correo electrónico, los mensajes de texto se perciben como algo más directo y personal, lo que reduce las sospechas. Los atacantes suelen utilizar bases de datos filtradas para enviar mensajes masivos o incluso recurren a técnicas automáticas para generar mensajes aleatorios, esperando que alguien caiga en la trampa.</p>
+
+        <h3>Ejemplos:</h3>
+        <ul>
+          <li>Mensaje de “tu paquete está retenido, haz clic aquí para liberarlo”.</li>
+          <li>SMS con promociones falsas que prometen recargas o regalos.</li>
+        </ul>
+        <h3>Señales de alerta:</h3>
+        <ul>
+          <li>Mensajes de números desconocidos pidiendo información personal.</li>
+          <li>Enlaces extraños o acortados que no se ven confiables.</li>
+          <li>Promesas demasiado buenas para ser verdad.</li>
+        </ul>
+        <button class="btn" onclick="openQuiz('smishingQuiz')">Haz el test de smishing</button>
+      </div>
+    </section>
+
+    <section id="vishing" class="info-section reveal">
+      <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/fa2b7fd67744f78a163973dbc7a41bdf25e88755/vishing.png" alt="Vishing">
+      <div class="info-text">
+        <h2>¿Qué es el vishing?</h2>
+        <p>El <b>vishing</b> (de <i>voice phishing</i>) es una técnica de <b>fraude telefónico</b> que utiliza llamadas de voz para engañar a las personas y obtener información confidencial, como contraseñas, números de tarjeta o códigos de verificación. A diferencia del phishing tradicional, que se realiza por correo o SMS, el vishing se apoya en la voz humana para generar confianza y manipular emocionalmente a la víctima.</p>
+        <p>Durante la llamada, el estafador utiliza tácticas de <b>ingeniería social</b> para generar miedo, urgencia o confianza. Las más comunes son:</p>
+        <ul>
+          <li><b>Miedo:</b> “Alguien intenta acceder a tu cuenta bancaria. Necesitamos bloquearla de inmediato”.</li>
+          <li><b>Urgencia:</b> “Tienes que confirmar tu identidad ahora o perderás el acceso”.</li>
+          <li><b>Confianza:</b> El atacante puede conocer tu nombre, número de cuenta o DNI, para parecer legítimo.</li>
+        </ul>
+        <h3>Ejemplos:</h3>
+        <ul>
+          <li>Llamada del “banco” alertando sobre un supuesto intento de fraude y solicitando claves.</li>
+          <li>Soporte técnico falso pidiendo instalar programas para acceder a tu computadora.</li>
+        </ul>
+        <h3>Señales de alerta:</h3>
+        <ul>
+          <li>Llamadas de números desconocidos que generan urgencia o miedo.</li>
+          <li>Solicitan contraseñas, códigos o acceso remoto.</li>
+          <li>Promesas de ayuda rápida a cambio de información personal.</li>
+        </ul>
+        <button class="btn" onclick="openQuiz('vishingQuiz')">Haz el test de vishing</button>
+      </div>
+    </section>
+
+    <section class="estadisticas reveal">
+      <h2 class="estadisticas-titulo">Impacto de los fraudes digitales</h2>
+      <div class="estadisticas-contenido">
+        <div class="estadisticas-texto">
+          <p>
+            Los fraudes digitales representan una de las principales amenazas para usuarios y empresas. Cada año, millones de personas son víctimas de estos ataques.
+          </p>
+          <div class="highlight">
+            <p>
+              Según estudios recientes, el costo promedio por ataque supera los 4 millones de dólares, y el tiempo promedio de detección es de 200 días.
+            </p>
+          </div>
+        </div>
+        <div class="estadisticas-fotos">
+          <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia1.jpg" alt="Evidencia Entrevista 1">
+          <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia2.jpg" alt="Evidencia Entrevista 2">
+          <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia3.jpg" alt="Evidencia Entrevista 3">
+        </div>
+      </div>
+    </section>
+
+    <section id="test" class="Final reveal">
+      <h1>Evalúa tus conocimientos</h1>
+      <p>Demuestra lo que aprendiste realizando los test interactivos de cada tipo de fraude.</p>
+      <button class="btn">Comenzar evaluación</button>
+    </section>
+  </main>
+
+<!-- QUIZZES -->
+<div id="quizOverlay" class="overlay"></div>
+
+<div id="phishingQuiz" class="quiz">
+  <h3>Test de Phishing</h3>
+  
+  <div class="question">
+    <img src="phishing1.png" alt="Correo bloqueado" class="quiz-image">
+    <p>Recibes un correo de tu banco diciendo “Tu cuenta fue bloqueada, haz clic para recuperarla”. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">No comparto mis datos y contacto al banco</button>
+    <button onclick="nextQuestion(this,false)">Hago clic inmediatamente para desbloquear la cuenta</button>
+  </div>
+
+  <div class="question">
+    <img src="phishing2.png" alt="Premio falso" class="quiz-image">
+    <p>El correo dice que ganaste un premio y pide tu número de tarjeta para reclamarlo. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Ignoro el correo, es sospechoso</button>
+    <button onclick="nextQuestion(this,false)">Envió mis datos para recibir el premio</button>
+  </div>
+
+  <div class="question">
+    <img src="phishing3.png" alt="Verificación streaming" class="quiz-image">
+    <p>Un correo de tu servicio de streaming favorito solicita verificar tu contraseña. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Accedo a mi cuenta por la web oficial, no por el correo</button>
+    <button onclick="nextQuestion(this,false)">Hago clic en el enlace del correo y pongo mi contraseña</button>
+  </div>
+</div>
+
+<div id="smishingQuiz" class="quiz">
+  <h3>Test de Smishing</h3>
+  
+  <div class="question">
+    <img src="smishing1.png" alt="Paquete retenido" class="quiz-image">
+    <p>Recibes un SMS que dice “Tu paquete no pudo ser entregado, haz clic para reprogramar”. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Ignoro el SMS y contacto directamente a la empresa</button>
+    <button onclick="nextQuestion(this,false)">Hago clic en el enlace del SMS</button>
+  </div>
+
+  <div class="question">
+    <img src="smishing2.png" alt="Recarga falsa" class="quiz-image">
+    <p>Un SMS ofrece recargas gratis y te pide tu número y contraseña de tu cuenta. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">No comparto mis datos y borro el mensaje</button>
+    <button onclick="nextQuestion(this,false)">Envió la información para recibir la recarga</button>
+  </div>
+
+  <div class="question">
+    <img src="smishing3.png" alt="Actividad sospechosa" class="quiz-image">
+    <p>Recibes un SMS diciendo que tu banco detectó actividad sospechosa y pide confirmar tu PIN. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Llamo al banco por teléfono oficial para verificar</button>
+    <button onclick="nextQuestion(this,false)">Respondo el SMS con mi PIN</button>
+  </div>
+</div>
+
+<div id="vishingQuiz" class="quiz">
+  <h3>Test de Vishing</h3>
+  
+  <div class="question">
+    <img src="vishing1.png" alt="Llamada fraude banco" class="quiz-image">
+    <p>Un supuesto agente del banco te llama y dice que hay fraude en tu cuenta, pide tus claves. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Cuelgo y llamo al banco por el número oficial</button>
+    <button onclick="nextQuestion(this,false)">Doy mis claves para resolver el problema rápido</button>
+  </div>
+
+  <div class="question">
+    <img src="vishing2.png" alt="Sorteo falso" class="quiz-image">
+    <p>Recibes una llamada diciendo que ganaste un sorteo y para reclamar debes dar tu número de tarjeta. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">No doy información y cuelgo</button>
+    <button onclick="nextQuestion(this,false)">Doy los datos para recibir el premio</button>
+  </div>
+
+  <div class="question">
+    <img src="vishing3.png" alt="Soporte técnico falso" class="quiz-image">
+    <p>Un soporte técnico llama diciendo que tu computadora tiene virus y necesita acceso remoto. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">No permito el acceso y cierro la llamada</button>
+    <button onclick="nextQuestion(this,false)">Sigo las instrucciones para que “arreglen” mi PC</button>
+  </div>
+</div>
+
+
+  <script>
+  function openQuiz(id) {
+    const overlay = document.getElementById('quizOverlay');
+    const quiz = document.getElementById(id);
+
+    overlay.classList.add('active');
+    quiz.classList.add('active');
+
+    const questions = quiz.querySelectorAll('.question');
+    questions.forEach(q => q.style.display = 'none');
+    if (questions.length > 0) questions[0].style.display = 'block';
+
+    overlay.onclick = closeQuiz;
+  }
+
+  function closeQuiz() {
+    document.getElementById('quizOverlay').classList.remove('active');
+    document.querySelectorAll('.quiz').forEach(q => q.classList.remove('active'));
+  }
+
+  function nextQuestion(button, correct) {
+    alert(correct ? "✅ ¡Correcto!" : "⚠️ Incorrecto, cuidado con esa acción.");
+
+    const current = button.closest('.question');
+    const quiz = current.closest('.quiz');
+    const questions = Array.from(quiz.querySelectorAll('.question'));
+    const index = questions.indexOf(current);
+
+    current.style.display = 'none';
+
+    if (index + 1 < questions.length) {
+      questions[index + 1].style.display = 'block';
+    } else {
+      alert("🎉 ¡Has completado el test!");
+      closeQuiz();
+    }
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('reveal-visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
