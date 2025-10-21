@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ciberseguridad y Fraudes Digitales</title>
+  <title>Estafas Digitales</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1 class="fredericka-the-great-regular">Ciberseguridad y Fraudes Digitales</h1>
+    <h1 class="fredericka-the-great-regular">ESTAFAS DIGITALES</h1>
     <p class="subtitle">Aprende a protegerte de los ataques digitales más comunes</p>
   </header>
 
-  <nav class="breadcrumb">
+  <nav class="sidebar">
     <a href="#intro" class="active">Inicio</a>
     <a href="#objetivos">Objetivos</a>
     <a href="#phishing">Phishing</a>
     <a href="#smishing">Smishing</a>
     <a href="#vishing">Vishing</a>
-    <a href="#test">Test</a>
+    <a href="#estadisticas">Estadísticas</a>
+    <a href="#evaluacion">Evaluación</a>
   </nav>
 
-  <main>
+
+  <main class="content">
     <section id="intro" class="intro reveal">
       <p>
         En el mundo digital actual, las amenazas cibernéticas están en constante evolución. Los ciberdelincuentes utilizan múltiples métodos para engañar a las personas y robar información confidencial. Conocer cómo funcionan estos ataques es la mejor defensa.
@@ -44,6 +46,8 @@
       </p>
     </section>
 
+    <!-- Sección PHISHING -->
+
     <section id="phishing" class="info-section reveal">
       <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/26d3a7ac3e6e398e2cb13d3a178d0324e5c9ce62/phishing.png" alt="Phishing">
       <div class="info-text">
@@ -63,9 +67,11 @@
           <li>Errores de ortografía o redacción extraña.</li>
           <li>Mensajes que generan urgencia (“Actúa ahora o perderás tu cuenta”).</li>
         </ul>
-        <button class="btn" onclick="openQuiz('phishingQuiz')">Haz el test de phishing</button>
+           <button class="btn-primary" onclick="openQuiz('phishingQuiz')">Haz el test de phishing</button>
       </div>
     </section>
+
+    <!-- Sección SMISHING -->
 
     <section id="smishing" class="info-section reveal">
       <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/56b0d5f7784d812feea2beb24b1f7a008af1fa02/smishing.png" alt="Smishing">
@@ -85,9 +91,11 @@
           <li>Enlaces extraños o acortados que no se ven confiables.</li>
           <li>Promesas demasiado buenas para ser verdad.</li>
         </ul>
-        <button class="btn" onclick="openQuiz('smishingQuiz')">Haz el test de smishing</button>
+        <button class="btn-primary" onclick="openQuiz('smishingQuiz')">Haz el test de smishing</button>
       </div>
     </section>
+
+    <!-- Sección VISHING -->
 
     <section id="vishing" class="info-section reveal">
       <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/fa2b7fd67744f78a163973dbc7a41bdf25e88755/vishing.png" alt="Vishing">
@@ -111,118 +119,178 @@
           <li>Solicitan contraseñas, códigos o acceso remoto.</li>
           <li>Promesas de ayuda rápida a cambio de información personal.</li>
         </ul>
-        <button class="btn" onclick="openQuiz('vishingQuiz')">Haz el test de vishing</button>
+        <button class="btn-primary" onclick="openQuiz('vishingQuiz')">Haz el test de vishing</button>
       </div>
     </section>
 
-    <section class="estadisticas reveal">
-      <h2 class="estadisticas-titulo">Impacto de los fraudes digitales</h2>
-      <div class="estadisticas-contenido">
-        <div class="estadisticas-texto">
-          <p>
-            Los fraudes digitales representan una de las principales amenazas para usuarios y empresas. Cada año, millones de personas son víctimas de estos ataques.
-          </p>
-          <div class="highlight">
-            <p>
-              Según estudios recientes, el costo promedio por ataque supera los 4 millones de dólares, y el tiempo promedio de detección es de 200 días.
-            </p>
-          </div>
-        </div>
-        <div class="estadisticas-fotos">
-          <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia1.jpg" alt="Evidencia Entrevista 1">
-          <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia2.jpg" alt="Evidencia Entrevista 2">
-          <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia3.jpg" alt="Evidencia Entrevista 3">
-        </div>
-      </div>
-    </section>
+<section id="estadisticas" class="estadisticas reveal">
+  <h2 class="estadisticas-titulo">Impacto de los fraudes digitales</h2>
+  <div class="estadisticas-contenido">
+    <div class="estadisticas-texto">
+      <p>
+        Los fraudes digitales son una amenaza creciente tanto en Perú como en el resto del mundo. Cada año, millones de personas pierden dinero, datos personales y credibilidad a causa de ataques como phishing, smishing y vishing.</p>
 
-    <section id="test" class="Final reveal">
-      <h1>Evalúa tus conocimientos</h1>
-      <p>Demuestra lo que aprendiste realizando los test interactivos de cada tipo de fraude.</p>
-      <button class="btn">Comenzar evaluación</button>
-    </section>
-  </main>
+      <p>
+        En Perú, las denuncias por delitos informáticos aumentaron un 40% en 2024, con pérdidas que superaron los 90 millones de soles solo en Lima. A nivel global, se estima que las pérdidas por ciberfraudes superan los miles de millones de dólares cada año.</p>
+
+      <p>
+        Esta situación demuestra que <strong>conocer y aprender a prevenir fraudes digitales es urgente</strong>. No basta con desconfiar; se necesita educación, herramientas de seguridad y hábitos digitales responsables.
+      </p>
+
+      <p>
+        Para entender cómo perciben estos riesgos los usuarios, mis compañeros y yo realizamos un cuestionario a 10 personas. Los resultados muestran que muchos desconocen las señales de alerta más comunes, evidenciando la necesidad de difundir este conocimiento.
+      </p>
+
+      <p>
+        Protégete siempre: verifica solicitudes de información con las fuentes oficiales, no compartas tus datos sensibles y mantente informado sobre las técnicas que los ciberdelincuentes usan cada día.
+      </p>
+    </div>
+
+    <div class="estadisticas-fotos">
+      <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia1.jpg" alt="Evidencia Entrevista 1">
+      <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia2.jpg" alt="Evidencia Entrevista 2">
+      <img src="https://raw.githubusercontent.com/fabioprog1909/ESTAFASDIGITALES/cc4e8acdc0f00363a9cbb6d3958decd1ceaf91a3/evidencia3.jpg" alt="Evidencia Entrevista 3">
+    </div>
+  </div>
+
+  <div class="estadisticas-boton" style="text-align:center; margin-top:20px;">
+    <a href="https://docs.google.com/forms/d/1g_V4cLobIvom-uB-rN65GJD6Wfpj35qwHUif0p7MWYA/viewanalytics" target="_blank" class="btn-ver-estadisticas" 
+       style="padding:10px 20px; background-color:#007BFF; color:white; text-decoration:none; border-radius:5px;">
+      Ver estadísticas completas
+    </a>
+  </div>
+</section>
+
+
+<section id="evaluacion" class="Final reveal">
+  <h1>Evalúa tus conocimientos</h1>
+  
+  <!-- Imagen grande -->
+  <img src="https://blog.hackmetrix.com/wp-content/uploads/2024/04/Introduccion-al-Phishing-y-la-Ingenieria-Social-1160x680.jpg" alt="Evaluación de conocimientos" class="final-image">
+
+  <p>Demuestra lo que aprendiste realizando los test interactivos de cada tipo de fraude.</p>
+  <button class="btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd0JCISEXU6Sd71XXTUYvuzPhZsMWwEFpuKsLWC7UAYmZtpKA/viewform?usp=header', '_blank')">
+  Comenzar evaluación
+</button>
+
+</section>
+
+</main>
+
+  <script>
+    // SCRIPT 1: Resalta el enlace activo según el scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      const links = document.querySelectorAll('.sidebar a');
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      links.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 
 <!-- QUIZZES -->
+
+<!-- Overlay oscuro detrás de los test -->
 <div id="quizOverlay" class="overlay"></div>
+
+<!-- Quiz de PHISHING -->
 
 <div id="phishingQuiz" class="quiz">
   <h3>Test de Phishing</h3>
   
   <div class="question">
-    <img src="phishing1.png" alt="Correo bloqueado" class="quiz-image">
+    <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/07/phishing-amazon-2422569.jpg?tf=3840x" alt="Correo bloqueado" class="quiz-image">
     <p>Recibes un correo de tu banco diciendo “Tu cuenta fue bloqueada, haz clic para recuperarla”. ¿Qué haces?</p>
     <button onclick="nextQuestion(this,true)">No comparto mis datos y contacto al banco</button>
     <button onclick="nextQuestion(this,false)">Hago clic inmediatamente para desbloquear la cuenta</button>
   </div>
 
   <div class="question">
-    <img src="phishing2.png" alt="Premio falso" class="quiz-image">
+    <img src="https://web-assets.esetstatic.com/wls/es-la/2013/03/Falso-correo1.png" alt="Premio falso" class="quiz-image">
     <p>El correo dice que ganaste un premio y pide tu número de tarjeta para reclamarlo. ¿Qué haces?</p>
     <button onclick="nextQuestion(this,true)">Ignoro el correo, es sospechoso</button>
     <button onclick="nextQuestion(this,false)">Envió mis datos para recibir el premio</button>
   </div>
 
   <div class="question">
-    <img src="phishing3.png" alt="Verificación streaming" class="quiz-image">
+    <img src="https://www.welivesecurity.com/wp-content/uploads/2019/04/Nuevo-Phishing-Netflix-robar-credenciales-datos-tarjeta-1.jpg" alt="Verificación streaming" class="quiz-image">
     <p>Un correo de tu servicio de streaming favorito solicita verificar tu contraseña. ¿Qué haces?</p>
     <button onclick="nextQuestion(this,true)">Accedo a mi cuenta por la web oficial, no por el correo</button>
     <button onclick="nextQuestion(this,false)">Hago clic en el enlace del correo y pongo mi contraseña</button>
   </div>
 </div>
 
+<!-- Quiz de SMISHING -->
+
+
 <div id="smishingQuiz" class="quiz">
   <h3>Test de Smishing</h3>
   
   <div class="question">
-    <img src="smishing1.png" alt="Paquete retenido" class="quiz-image">
+    <img src="https://i.blogs.es/71be65/falso-correos/1200_630.jpeg" alt="Paquete retenido" class="quiz-image">
     <p>Recibes un SMS que dice “Tu paquete no pudo ser entregado, haz clic para reprogramar”. ¿Qué haces?</p>
     <button onclick="nextQuestion(this,true)">Ignoro el SMS y contacto directamente a la empresa</button>
     <button onclick="nextQuestion(this,false)">Hago clic en el enlace del SMS</button>
   </div>
 
   <div class="question">
-    <img src="smishing2.png" alt="Recarga falsa" class="quiz-image">
-    <p>Un SMS ofrece recargas gratis y te pide tu número y contraseña de tu cuenta. ¿Qué haces?</p>
-    <button onclick="nextQuestion(this,true)">No comparto mis datos y borro el mensaje</button>
-    <button onclick="nextQuestion(this,false)">Envió la información para recibir la recarga</button>
+    <img src="https://tecolotito.elsiglodedurango.com.mx/cdn-cgi/image/format=auto,width=1024/i/2023/11/1225408.jpeg" alt="Código raro" class="quiz-image">
+    <p>Un número desconocido te habla por WhatsApp diciéndote que le envies un codigo de 6 digitos porque te lo envió por error. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Bloqueo y reporto el numero de inmediato.</button>
+    <button onclick="nextQuestion(this,false)">Le paso el codigo de 6 digitos que me llegaron.</button>
   </div>
 
   <div class="question">
-    <img src="smishing3.png" alt="Actividad sospechosa" class="quiz-image">
-    <p>Recibes un SMS diciendo que tu banco detectó actividad sospechosa y pide confirmar tu PIN. ¿Qué haces?</p>
-    <button onclick="nextQuestion(this,true)">Llamo al banco por teléfono oficial para verificar</button>
-    <button onclick="nextQuestion(this,false)">Respondo el SMS con mi PIN</button>
+    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/4DEMRUK6SJB2LKP6YB4D5ACVJE.JPG" alt="Actividad sospechosa" class="quiz-image">
+    <p>Recibes un SMS diciendo que actualices tu celular a la nueva tecnología 5G. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Realizar búsquedas y corroborar los datos.</button>
+    <button onclick="nextQuestion(this,false)">Doy click en el enlace que me mandaron.</button>
   </div>
 </div>
+
+  <!-- Quiz de VISHING -->
 
 <div id="vishingQuiz" class="quiz">
   <h3>Test de Vishing</h3>
   
   <div class="question">
-    <img src="vishing1.png" alt="Llamada fraude banco" class="quiz-image">
-    <p>Un supuesto agente del banco te llama y dice que hay fraude en tu cuenta, pide tus claves. ¿Qué haces?</p>
-    <button onclick="nextQuestion(this,true)">Cuelgo y llamo al banco por el número oficial</button>
-    <button onclick="nextQuestion(this,false)">Doy mis claves para resolver el problema rápido</button>
+    <img src="https://www.infobae.com/new-resizer/6p-TTqD8ECx-o-2s6C0E3J3IIho=/arc-anglerfish-arc2-prod-infobae/public/2GHPUQMWA5FAZONXX6D4GY7H2Y.png" alt="Llamada fraude banco" class="quiz-image">
+    <p>Llamada diciendo “somos del banco, confirme el código CVV de su tarjeta para validar una operación”. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Colgar y llamar al número oficial del banco (o revisar la app) antes de dar datos.</button>
+    <button onclick="nextQuestion(this,false)">Decir el CVV por teléfono pensando que es urgente.</button>
   </div>
 
   <div class="question">
-    <img src="vishing2.png" alt="Sorteo falso" class="quiz-image">
-    <p>Recibes una llamada diciendo que ganaste un sorteo y para reclamar debes dar tu número de tarjeta. ¿Qué haces?</p>
-    <button onclick="nextQuestion(this,true)">No doy información y cuelgo</button>
-    <button onclick="nextQuestion(this,false)">Doy los datos para recibir el premio</button>
+    <img src="https://comunicaciones.congreso.gob.pe/wpuploads/2024/06/spam.jpg" alt="Soporte técnico falso" class="quiz-image">
+    <p>Mensaje de “soporte técnico” que dice que su ordenador tiene virus y pide instalar un programa remoto ahora. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Negarse y pedir contacto por canales oficiales; no permitir acceso remoto.</button>
+    <button onclick="nextQuestion(this,false)">Instalar el software y dar acceso para que “reparen” el equipo.</button>
   </div>
 
   <div class="question">
-    <img src="vishing3.png" alt="Soporte técnico falso" class="quiz-image">
-    <p>Un soporte técnico llama diciendo que tu computadora tiene virus y necesita acceso remoto. ¿Qué haces?</p>
-    <button onclick="nextQuestion(this,true)">No permito el acceso y cierro la llamada</button>
-    <button onclick="nextQuestion(this,false)">Sigo las instrucciones para que “arreglen” mi PC</button>
+    <img src="https://www.adslzone.net/app/uploads-adslzone.net/2025/01/llamadas-spam.jpg" alt="Regalo falso" class="quiz-image">
+    <p>Voz que anuncia que ganó un premio pero necesita sus datos bancarios para transferir el dinero. ¿Qué haces?</p>
+    <button onclick="nextQuestion(this,true)">Ignorar la llamada y verificar la supuesta promoción en la web oficial o con la empresa por sus canales.</button>
+    <button onclick="nextQuestion(this,false)">Proporcionar número de cuenta, PIN o código que le pidan.</button>
   </div>
 </div>
 
 
   <script>
+  // Abre el quiz correspondiente
+
   function openQuiz(id) {
     const overlay = document.getElementById('quizOverlay');
     const quiz = document.getElementById(id);
@@ -230,17 +298,22 @@
     overlay.classList.add('active');
     quiz.classList.add('active');
 
+  // Muestra solo la primera pregunta
+
     const questions = quiz.querySelectorAll('.question');
     questions.forEach(q => q.style.display = 'none');
     if (questions.length > 0) questions[0].style.display = 'block';
-
     overlay.onclick = closeQuiz;
   }
+
+  // Cierra el quiz y el overlay
 
   function closeQuiz() {
     document.getElementById('quizOverlay').classList.remove('active');
     document.querySelectorAll('.quiz').forEach(q => q.classList.remove('active'));
   }
+
+// Avanza a la siguiente pregunta y muestra alertas
 
   function nextQuestion(button, correct) {
     alert(correct ? "✅ ¡Correcto!" : "⚠️ Incorrecto, cuidado con esa acción.");
@@ -259,6 +332,7 @@
       closeQuiz();
     }
   }
+    // Efecto de aparición suave al hacer scroll
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
